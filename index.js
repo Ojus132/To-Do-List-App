@@ -20,7 +20,7 @@ app.post("/todaySubmit", (req, res) => {
 app.post("/workSubmit", (req, res) => {
     workTaskList[j] = req.body.newTask;
     j++;
-    res.render("today.ejs", {tasks : workTaskList })
+    res.render("work.ejs", {tasks : workTaskList })
 });
 
 app.get("/", (req, res) => {
