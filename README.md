@@ -3,7 +3,7 @@ This is a simple to-do list web app made by me using node, express, ejs and boot
 
 ## Functionality : 
 1. You can switch between today's to-do list and work related to-do list from the navbar.
-2. It takes input from the user for new tasks and adds the task to the list (NOTE : Refreshing the page on /todaySubmit or /workSubmit will lead to resubmission of the task, i will be working on the fix). 
+2. It takes input from the user for new tasks and adds the task to the list. 
 3. There is not a database attached to the app, so everytime you restart the server, the list will reset.
 
 ## Setup : 
