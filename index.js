@@ -14,13 +14,13 @@ let i = 0, j = 0;
 app.post("/todaySubmit", (req, res) => {
     todayTaskList[i] = req.body.newTask;
     i++;
-    res.render("today.ejs", {tasks : todayTaskList })
+    res.redirect("/today");
 });
 
 app.post("/workSubmit", (req, res) => {
     workTaskList[j] = req.body.newTask;
     j++;
-    res.render("work.ejs", {tasks : workTaskList })
+    res.redirect("/work")
 });
 
 app.get("/", (req, res) => {
